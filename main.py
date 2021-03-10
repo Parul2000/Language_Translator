@@ -19,5 +19,5 @@ except:
 translated = translator.translate(text,dest=output_lang)
 print(translated.text)
 converted_audio = gtts.gTTS(translated.text, lang=output_lang)
-converted_audio.save('tran.mp3pip install playsound')
+converted_audio.save('tran.mp3')
 playsound.playsound('tran.mp3')
